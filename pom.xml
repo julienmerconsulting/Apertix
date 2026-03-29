@@ -173,7 +173,7 @@
 					<execution>
 						<phase>generate-sources</phase>
 						<configuration>
-						    <tasks>
+						    <target>
 						        <echo>Extracting Java classes.</echo>
 						        <unjar src="${project.basedir}/upstream/opencv-${opencv.version.short}.jar"
 						            dest="${project.build.directory}/classes">
@@ -188,7 +188,7 @@
 						                <include name="**/*.java" />
 						            </patternset>
 						        </unjar>
-						    </tasks>
+						    </target>
 						</configuration>
 						<goals>
 							<goal>run</goal>
