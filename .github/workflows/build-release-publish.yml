@@ -5,6 +5,8 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - 'claude/fix-opencv-macos-packaging-2RTZ0'
 
 jobs:
   build_linux_arm:
